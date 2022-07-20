@@ -1,0 +1,128 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
+}
+
+body{
+	height: 100vh;
+	width: 100%;
+}
+
+.container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 50px 100px;
+	background-image: linear-gradient(160deg, rgb(223, 111, 195),rgb(187, 245, 213), rgb(230, 230, 173));
+}
+
+.contact-box{
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+.left{
+	background: url('3.png') no-repeat center;
+	background-size: 100%;
+	height: 100%;
+}
+
+.right{
+	padding: 25px 40px;
+	text-align:left
+}
+
+h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+
+h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+
+}
+label{
+	text-align: left;
+}
+
+.field{
+	width: 100%;
+	outline: none;
+	border: 2px solid rgb(255, 255, 255);
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.8rem 1rem;
+	font-size: 1rem;
+	border-radius: 5px;
+	margin-bottom: 5px;
+	transition: .3s ease-in-out;
+}
+.field:focus{
+    border: 1.5px solid rgb(0, 0, 0);
+    border: 1.5px solid rgba(0, 0, 0, 0.253);
+}
+.field:hover{
+	border: 1.5px solid rgba(0, 0, 0, 0.253);
+	background-color: rgba(0, 0, 0, 0.1);
+}
+.field.choose-file{
+	background-color: rgba(0, 0, 0, 0.048);
+	width: 65%;
+	font-size: .9rem;
+}
+.field.birthdate{
+	width: 75%;
+}
+.field.religion{
+	width: 75%;
+}
+
+.radio{
+    position: relative;
+    bottom: 0rem;
+}
+
+textarea{
+	min-height: 150px;
+}
+.btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: #17a7b6;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.btn:hover{
+    background-color: #178c99;
+}
+
+@media screen and (max-width: 880px){
+	.contact-box{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: 200px;
+	}
+}

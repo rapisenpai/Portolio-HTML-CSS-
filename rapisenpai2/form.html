@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Registration</title>
+		<link rel="stylesheet" type="text/css" href="form.css">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+		<!-- Favicon -->
+		<link rel="apple-touch-icon" sizes="19x180" href="./images/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+		<link rel="manifest" href="./images/site.webmanifest">
+		<link rel="icon" href="./images/android-chrome-192x192.png">
+	</head>
+	<body>
+		<div class="container">
+			<div class="contact-box">
+				<div class="left"></div>
+				<div class="right">
+					<h2>Register your Account</h2>					
+					<form>
+						<input type="text" class="field" placeholder="Username" name="Username"><br>
+						<input type="password" class="field" placeholder="Password">
+						<input type="email" class="field" placeholder="E-mail"><br>
+						<input type="number" class="field" placeholder="Phone number">
+						<label for="" class="label"><b>Birthdate:</b></label>&nbsp;&nbsp;&nbsp;<input type="date" class="field birthdate" placeholder="Birth date"> 
+						<label for="" class="label"><b>Profile picture: </b></label>&nbsp;
+						<input type="file" class="field choose-file">
+						<br>
+
+						<b class="">Gender:</b> &nbsp;
+						<form>
+							<label class="radio">
+							<input class="btn2" type="radio" name="gender" value="male">
+							Male </label>
+							<label class="radio">
+							<input class="btn2"  type="radio" name="gender" value="female" Female>
+							Female </label> 
+						</form>
+						<br>
+
+						<b>Language Spoken:</b> <br>
+						<input type="checkbox" id="cebuano" value="Cebuano">
+						<label for="cebuano"> Cebuano</label><br>
+						<input type="checkbox" id="tagalog" value="Tagalog">
+						<label for="tagalog"> Tagalog</label><br>
+						<input type="checkbox" id="english" value="English">
+						<label for="english"> English</label><br>
+						<input type="checkbox" id="other" value="Other">
+						<label for="other"> Other</label><br><br>
+						<b><label for="religion" class="label">Religion: </label></b>&nbsp;&nbsp;
+						<select name="religion" id="religion" class="field religion">
+							<option>Select Religion</option>
+							<option>Catholic</option>
+							<Option>Born Again Christian</Option>
+							<option>Iglesia Ni Cristo</option>
+						</select>
+						
+					</form>
+				</div>
+				<br>
+				<button class="btn">Register</button>
+			</div>
+		</div>
+	</body>
+</html>
